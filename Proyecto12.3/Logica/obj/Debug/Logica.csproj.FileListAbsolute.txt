@@ -1,0 +1,47 @@
+C:\Users\Mathi\Desktop\Proyecto de verano\Logica\bin\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Proyecto de verano\Logica\bin\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Proyecto de verano\Logica\obj\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Proyecto de verano\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\Logica\obj\Debug\Logica.pdb
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\Logica\obj\Debug\Logica.dll
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\Logica\obj\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Proyecto de verano2\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Proyecto\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto\Logica\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Proyecto\Logica\obj\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Proyecto\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Logica\obj\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\obj\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Logica\obj\Debug\Logica.pdb

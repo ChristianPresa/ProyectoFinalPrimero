@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Bienvenida.master.cs" Inherits="Bienvenida" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 138px;
+        }
+        .style2
+        {
+            width: 908px;
+        }
+        .style3
+        {
+            width: 138px;
+            height: 17px;
+        }
+        .style4
+        {
+            width: 908px;
+            height: 17px;
+            text-align: center;
+        }
+        .style5
+        {
+            height: 17px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <table style="width:100%;">
+            <tr>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style4">
+                    <asp:Label ID="lblNombreLogueo" runat="server"></asp:Label>
+                </td>
+                <td class="style5">
+                    <asp:Button ID="btnDeloguear" runat="server" Text="Desconectarse" 
+                        onclick="btnDeloguear_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    <asp:Menu ID="Menu1" runat="server">
+                        <Items>
+                            <asp:MenuItem Text="Paises" Value="Paises" NavigateUrl="PaisMP.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Ciudades" Value="Ciudades" NavigateUrl="CiudadesMP.aspx">    
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Usuarios" Value="Usuarios" NavigateUrl="UsuarioMP.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Pronostico" Value="Pronostico" NavigateUrl="PronosticoMP.aspx">
+                                <asp:MenuItem Text="Crear" Value="Crear" NavigateUrl="PronosticoMP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Listar por ciudad" Value="Listar por ciudad" NavigateUrl="ListadoPronosticoCiudadMP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Listado para el dia" Value="Listado para el dia" NavigateUrl="PronosticoDiaMP.aspx">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    <asp:Label ID="lblError" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

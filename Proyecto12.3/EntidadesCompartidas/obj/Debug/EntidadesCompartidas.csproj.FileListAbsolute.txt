@@ -1,0 +1,33 @@
+C:\Users\Mathi\Desktop\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto de verano2\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto de verano2\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto de verano2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto de verano2\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\EntidadesCompartidas\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\EntidadesCompartidas\obj\Debug\EntidadesCompartidas.pdb

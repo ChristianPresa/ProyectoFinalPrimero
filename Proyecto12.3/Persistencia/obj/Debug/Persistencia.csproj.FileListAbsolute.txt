@@ -1,0 +1,31 @@
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\VERANO 1\Proyecto de verano\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Proyecto de verano\Proyecto de verano\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Proyecto de verano2\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Proyecto\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Bios\PROYECTO VERANO\Proyecto\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta (3)\Proyecto12.3\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\bin\Debug\EntidadesCompartidas.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\bin\Debug\EntidadesCompartidas.pdb
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\Final\proyecto final\Proyecto12.3\Persistencia\obj\Debug\Persistencia.pdb
