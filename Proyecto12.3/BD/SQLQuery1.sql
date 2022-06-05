@@ -245,7 +245,7 @@ create proc EliminarPais
 as 
 begin
 	if not exists (select * from Pais where CodPais =  @CodPais)
-		return -5
+		return -4
 	if exists (select * from Pronostico where CodPais =  @CodPais)
 		return -1
 
@@ -344,19 +344,19 @@ create proc EliminarCiudad
 		if @@ERROR <>0
 		begin 
 			rollback tran
-			return -3
+			return -2
 		end 	
 		delete from Pronostico where CodCiudad = @CodCiudad and CodPais = @CodPais
 		if @@ERROR <>0
 		begin 
 			rollback tran
-			return -2
+			return -3
 		end 	
 		delete from Ciudad where CodCiudad = @CodCiudad and CodPais = @CodPais
 		if @@ERROR <>0
 		begin 
 			rollback tran
-			return -2
+			return -4
 		end 		
 commit transaction
 return 1
@@ -386,12 +386,12 @@ create proc AgregarPronostico
 @Hora time 
 as
 begin
-if not exists ( select * from Usuario where Usuario.NomLog = @NomLog)-- Si el usuario existe va al ELSE
+if not exists ( select * from Usuario where Usuario.NomLog = @NomLog)-- Si el usuario no existe va al ELSE
 begin
 return -1
 end
 else
-if not exists ( select * from Ciudad where Ciudad.CodCiudad = @Codciudad and Ciudad.CodPais = @CodPais)-- Si la ciudad existe va al ELSE
+if not exists ( select * from Ciudad where Ciudad.CodCiudad = @Codciudad and Ciudad.CodPais = @CodPais)-- Si la ciudad no existe va al ELSE
 begin
 return -2
 end
@@ -408,7 +408,7 @@ end insert into Escriben values(@NomLog,@CodPronostico)
 if @@ERROR <> 0
 begin
 rollback tran
-return -5
+return -4
 end
 commit tran
 return @CodPronostico

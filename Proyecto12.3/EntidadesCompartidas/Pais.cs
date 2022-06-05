@@ -18,7 +18,7 @@ namespace EntidadesCompartidas
                 if (System.Text.RegularExpressions.Regex.IsMatch(value, "[A-Z]{3}"))
                     _CodPais = value;
                 else
-                    throw new Exception("Debe ingresar un codigo de pais de tres letras ");
+                    throw new Exception("Debe ingresar un codigo de pais de tres letras Mayusculas ");
             }
         }
         public string NomPais
@@ -26,10 +26,15 @@ namespace EntidadesCompartidas
             get { return _NomPais; }
             set
             {
-                if (value != "")
-                    _NomPais = value;
+                if (value.Trim().Length <= 30)
+                {
+                    if (value != "")
+                        _NomPais = value;
+                    else
+                        throw new Exception("Debe ingresar un nombre de pais ");
+                }
                 else
-                    throw new Exception("Debe ingresar un nombre de pais ");
+                    throw new Exception("Debe ingresar un nombre de pais con un maximo de 30 caracteres ");
             }    
 
         }

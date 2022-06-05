@@ -88,12 +88,12 @@ namespace Persistencia
 
         }
 
-        public static void EliminarUsuario(string NomLog)
+        public static void EliminarUsuario(Usuario uUsuario)
         {
             SqlConnection _cnn = new SqlConnection(Conexion.Cnn);
             SqlCommand cmm = new SqlCommand("EliminarUsuario", _cnn);
             cmm.CommandType = CommandType.StoredProcedure;
-            cmm.Parameters.AddWithValue("@NomLog", NomLog);
+            cmm.Parameters.AddWithValue("@NomLog", uUsuario.NomLog);
 
             SqlParameter oRetorno = new SqlParameter("@Retorno", SqlDbType.Int);
             oRetorno.Direction = ParameterDirection.ReturnValue;

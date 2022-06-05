@@ -19,10 +19,15 @@ namespace EntidadesCompartidas
             get { return _NomLog; }
             set
             {
-                if (value != "")
-                    _NomLog = value;
+                if (value.Trim().Length <= 50)
+                {
+                    if (value != "")
+                        _NomLog = value;
+                    else
+                        throw new Exception("Debe ingresar un nombre de usuario");
+                }
                 else
-                    throw new Exception("Debe ingresar un nombre de usuario");
+                    throw new Exception("Debe ingresar un nombre de usuario de hasta 50 caracteres");
             }
         }
         public string Password
@@ -30,10 +35,15 @@ namespace EntidadesCompartidas
             get { return _Password; }
             set
             {
+                if(value.Trim().Length <= 50)
+                {
                 if (value != "")
                     _Password = value;
                 else
                     throw new Exception("Debe ingresar una Contraseña");
+            }
+            else
+                    throw new Exception("Debe ingresar una Contraseña con hasta 50 caracteres ");
             }
         }
         public string Nombre1
@@ -41,10 +51,16 @@ namespace EntidadesCompartidas
             get { return _Nombre1; }
             set
             {
-                if (value != "")
-                    _Nombre1 = value;
+                if (value.Trim().Length <= 30)
+                {
+                    if (value != "")
+                        _Nombre1 = value;
+                    else
+                        throw new Exception("Debe ingresar un primer Nombre");
+                }
                 else
-                    throw new Exception("Debe ingresar un primer Nombre");
+                    throw new Exception("Debe ingresar un Nombre con hasta 30 caracteres");
+
             }
         }
         
@@ -53,23 +69,51 @@ namespace EntidadesCompartidas
             get { return _Apellido1; }
             set
             {
-                if (value != "")
-                    _Apellido1 = value;
+                if (value.Trim().Length <= 30)
+                {
+                    if (value != "")
+                        _Apellido1 = value;
+                    else
+                        throw new Exception("Debe ingresar un primer Apellido");
+                }
                 else
-                    throw new Exception("Debe ingresar un primer Apellido");
+                    throw new Exception("Debe ingresar un Apellido con hasta 30 caracteres");
+                
             }
         }
 
         public string Nombre2
         {
             get { return _Nombre2; }
-            set { _Nombre2 = value; }
+            set
+            {
+                if (value.Trim().Length <= 30)
+                {
+                    if (value != "")
+                        _Nombre1 = value;
+                    else
+                        throw new Exception("Debe ingresar un Segundo Nombre");
+                }
+                else
+                    throw new Exception("Debe ingresar un Segundo Nombre con hasta 30 caracteres");
+            }
         }
 
         public string Apellido2
         {
             get { return _Apellido2; }
-            set { _Apellido2 = value; }
+            set
+            {
+                if (value.Trim().Length <= 30)
+                {
+                    if (value != "")
+                        _Apellido1 = value;
+                    else
+                        throw new Exception("Debe ingresar un segundo Apellido");
+                }
+                else
+                    throw new Exception("Debe ingresar un segundo Apellido con hasta 30 caracteres");
+            }
         }
 
         public Usuario(string nNomLog, string pPassword, string nNombre1, string nNombre2, string aApelido1, string aApellido2)

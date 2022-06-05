@@ -11,7 +11,7 @@ namespace Persistencia
 {
     public class PersistenciaPronostico
     {
-        public static List<Pronostico> ListarPronosticoDiario()
+       /* public static List<Pronostico> ListarPronosticoDiario()
         {
             DateTime FechaHoy = DateTime.Now;
             string fFechaHoy;
@@ -66,7 +66,7 @@ namespace Persistencia
                 cnn.Close();
             }
             return oAux;
-        }
+        }*/
         public static List<Pronostico> ListarPronosticoFecha(DateTime Fecha)
         {
 
@@ -127,17 +127,17 @@ namespace Persistencia
             return oAux;
         }
 
-        public static List<Pronostico> ListarPronosticoPorCiudad(string CodPais, string CodCiudad)
+        public static List<Pronostico> ListarPronosticoPorCiudad(Pais pPais,Ciudad cCiudad)
         {
             SqlConnection cnn = new SqlConnection(Conexion.Cnn);
             SqlCommand cmm = new SqlCommand("ListarPronosticoPorCiudad", cnn);
             cmm.CommandType = CommandType.StoredProcedure;
-            cmm.Parameters.AddWithValue("@CodPais", CodPais);
-            cmm.Parameters.AddWithValue("@CodCiudad", CodCiudad);
+            cmm.Parameters.AddWithValue("@CodPais", pPais.CodPais);
+            cmm.Parameters.AddWithValue("@CodCiudad", cCiudad.CodCiudad);
 
             List<Pronostico> oAux = new List<Pronostico>();
 
-            string tTipoCielo, cCodPais, cCiudad, uUsuario;
+            string tTipoCielo, uUsuario,CCodigoPais,CCiudad;
             int vVelocidadViento, pProbabilidad, tTempMax, tTempMin;
             int cCodPronostico;
             DateTime fFecha;
@@ -152,8 +152,8 @@ namespace Persistencia
                 while (oReader.Read())
                 {
                     tTipoCielo = (string)oReader["TipoCielo"];
-                    cCodPais = (string)oReader["CodPais"];
-                    cCiudad = (string)oReader["CodCiudad"];
+                    CCodigoPais = (string)oReader["CodPais"];
+                    CCiudad = (string)oReader["CodCiudad"];
                     fFecha = (DateTime)oReader["Fecha"];
                     hHora = (string)oReader["Hora"].ToString().Substring(0, 5);
                     cCodPronostico = (int)oReader["CodPronostico"];
@@ -164,7 +164,7 @@ namespace Persistencia
                     uUsuario = (string)oReader["NomLog"];
 
                     Usuario usuario = PersistenciaUsuario.BuscarUsuarios(uUsuario);
-                    Ciudad ciudad = PersistenciaCiudad.BuscarCiudad(cCiudad, cCodPais);
+                    Ciudad ciudad = PersistenciaCiudad.BuscarCiudad(CCiudad, pPais.CodPais);
 
                     Pronostico pro = new Pronostico(pProbabilidad, tTipoCielo, vVelocidadViento, fFecha.Date, hHora, tTempMin, tTempMax, cCodPronostico, ciudad, usuario);
                     oAux.Add(pro);
@@ -211,9 +211,13 @@ namespace Persistencia
                 cnn.Open();
                 cmm.ExecuteNonQuery();
                 retorno = (int)cmm.Parameters["@Retorno"].Value;
+                if (retorno == -1)
+                    throw new Exception("El Usuario no existe");
+                if (retorno == -2)
+                    throw new Exception("No existe la Ciudad");
                 if (retorno == -3)
                     throw new Exception("Error BD - Tabla Pronostico");
-                if (retorno == -5)
+                if (retorno == -4)
                     throw new Exception("Error BD- Tabla Escriben.");
             }
             catch (Exception ex)

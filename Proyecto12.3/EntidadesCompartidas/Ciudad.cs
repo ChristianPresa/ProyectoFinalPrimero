@@ -17,23 +17,19 @@ namespace EntidadesCompartidas
             get { return _NomCiudad; }
             set
             {
-                if (value != "")
-                    _NomCiudad = value;
+                if (value.Trim().Length <= 50)
+                {
+                    if (value != "" && value.Trim().Length <= 50)
+                        _NomCiudad = value;
+                    else
+                        throw new Exception("Debe ingresar un nombre de ciudad ");
+                }
                 else
-                    throw new Exception("Debe ingresar un nombre de ciudad ");
+                    throw new Exception("Debe ingresar un nombre de ciudad con hasta un maximo de 50 caracteres ");
+
             }
         }
-        //public string CodPais
-        //{
-        //    set
-        //    {
-        //        if (value.Length == 3)
-        //            _CodPais = value;
-        //        else
-        //            throw new Exception("EL codigo debe contener 3 letras");
-        //    }
-        //    get { return _CodPais; }
-        //}
+      
 
         public string CodCiudad
         {
@@ -42,7 +38,7 @@ namespace EntidadesCompartidas
                 if (System.Text.RegularExpressions.Regex.IsMatch(value, "[A-Z]{3}"))
                     _CodCiudad = value;
                 else
-                    throw new Exception("EL codigo debe contener 3 letras");
+                    throw new Exception("EL codigo debe contener 3 letras Mayusculas");
             }
             get { return _CodCiudad; }
         }

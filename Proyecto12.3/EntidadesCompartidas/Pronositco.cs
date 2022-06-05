@@ -39,7 +39,7 @@ namespace EntidadesCompartidas
             get { return _TipoCielo; }
             set
             {
-              //  if (value == "nuboso" ||"despejado" ||"parcialmente nuboso")
+                if (value.ToLower() == "nuboso" ||value.ToLower() =="despejado" ||value.ToLower() == "parcialmente nuboso")
             _TipoCielo = value;
             }
         }
@@ -51,7 +51,7 @@ namespace EntidadesCompartidas
                 if (value >= 0)
                     _VelocidadViento = value;
                 else
-                    throw new Exception("Debe velocidad del viento.");
+                    throw new Exception("Debe ingresar velocidad del viento.");
             }
         }
         public int CodPronostico

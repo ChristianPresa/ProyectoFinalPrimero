@@ -45,14 +45,14 @@ namespace Persistencia
             
         }
 
-        public static void AgregarPais(string CodPais, string NomPais)
+        public static void AgregarPais(Pais pPais)
         {
             SqlConnection cnn = new SqlConnection(Conexion.Cnn);
             SqlCommand cmd = new SqlCommand("AgregarPais", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@CodPais", CodPais);
-            cmd.Parameters.AddWithValue("@NomPais", NomPais);
+            cmd.Parameters.AddWithValue("@CodPais", pPais.CodPais);
+            cmd.Parameters.AddWithValue("@NomPais", pPais.NomPais);
 
             SqlParameter Retorno = new SqlParameter("@Retorno", SqlDbType.Int);
             Retorno.Direction = ParameterDirection.ReturnValue;
@@ -79,14 +79,14 @@ namespace Persistencia
             }
            
         }
-        public static void ModificarPais(string CodPais, string NomPais)
+        public static void ModificarPais(Pais pPais)
         {
             SqlConnection _cnn = new SqlConnection(Conexion.Cnn);
             SqlCommand cmm = new SqlCommand("ModPais", _cnn);
             cmm.CommandType = CommandType.StoredProcedure;
 
-            cmm.Parameters.AddWithValue("@CodPais", CodPais);
-            cmm.Parameters.AddWithValue("@NomPais", NomPais);
+            cmm.Parameters.AddWithValue("@CodPais", pPais.CodPais);
+            cmm.Parameters.AddWithValue("@NomPais", pPais.NomPais);
 
             SqlParameter oRetorno = new SqlParameter("@Retorno", SqlDbType.Int);
             oRetorno.Direction = ParameterDirection.ReturnValue;
@@ -129,7 +129,7 @@ namespace Persistencia
                 cmm.ExecuteNonQuery();
 
                 int oAfectados = (int)cmm.Parameters["@Retorno"].Value;
-                if (oAfectados == -5)
+                if (oAfectados == -4)
                     throw new Exception("No existe el pais.");
                 if (oAfectados == -1)
                     throw new Exception("No se elimina, tiene pronosticos asociados.");

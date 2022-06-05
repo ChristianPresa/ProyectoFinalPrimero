@@ -96,25 +96,23 @@ namespace Persistencia
             cmd.Parameters.AddWithValue("@CodPais", Ciudad.pPais.CodPais);
             cmd.Parameters.AddWithValue("@NomCiudad", Ciudad.NomCiudad);
 
-            string oCodCiudad, oCodPais, oNombreCiudad;
-            Ciudad cCiudad = null;
+         //   string oCodCiudad, oCodPais, oNombreCiudad;
+          //  Ciudad cCiudad = null;
 
-            SqlDataReader oReader;
+            SqlParameter oRetorno = new SqlParameter("@Retorno", SqlDbType.Int);
+            oRetorno.Direction = ParameterDirection.ReturnValue;
+            cmd.Parameters.Add(oRetorno);
 
             try
             {
                 cnn.Open();
-                oReader = cmd.ExecuteReader();
-                while (oReader.Read())
-                {
-                   oCodPais = (string)oReader["CodPais"];
-                    oCodCiudad = (string)oReader["CodCiudad"];
-                    oNombreCiudad = (string)oReader["NomCiudad"];
-
-                    Pais pPais = PresistenciaPais.BuscarPais(oCodPais);
-                    cCiudad = new Ciudad(oCodPais,oCodCiudad, pPais);
-                }
-                oReader.Close();
+                cmd.ExecuteNonQuery();
+               
+                     int oAfectados = (int)cmd.Parameters["@Retorno"].Value;
+                if (oAfectados == -1)
+                    throw new Exception("No se pudo modificar la Ciudad porque no existe");   
+                
+                cnn.Close();
             }
             catch (Exception ex)
             {
@@ -147,8 +145,13 @@ namespace Persistencia
                 Retorno = (int)cmd.Parameters["@Retorno"].Value;
                 if (Retorno == -1)
                     throw new Exception("El pais no existe");
-                else if (Retorno == -2)
+                if (Retorno == -2)
+                    throw new Exception("Error en la tabla escriben");
+                else if (Retorno == -3)
                     throw new Exception("La ciudad ya existe en este Pais.");
+                
+                if (Retorno == -4)
+                    throw new Exception("Error en la tabla Ciudad");
             }
             catch (Exception ex)
             {
@@ -197,18 +200,16 @@ namespace Persistencia
             }
             return oAux; 
         }
-        public static List<Ciudad> ListarCiudadPorPais(string CodPais)
+        public static List<Ciudad> ListarCiudadPorPais(Pais pPais)
         {
             List<Ciudad> oAux = new List<Ciudad>();
-            string cCodPais, cCodCiudad, nNomCiudad;
-            //string  cCodCiudad, nNomCiudad;
-          //  Pais cCodPais;
+            string cCodPais, cCodCiudad, nNomCiudad;   
             Ciudad cCiudad = null;
 
             SqlConnection cnn = new SqlConnection(Conexion.Cnn);
             SqlCommand cmm = new SqlCommand("ListarCiudadPorPais", cnn);
             cmm.CommandType = CommandType.StoredProcedure;
-            cmm.Parameters.AddWithValue("@CodPais", CodPais);
+            cmm.Parameters.AddWithValue("@CodPais", pPais.CodPais);
             SqlDataReader oReader;
             try
             {
@@ -217,13 +218,13 @@ namespace Persistencia
                 while (oReader.Read())
                 {
                     cCodPais = (string)oReader["CodPais"];
-                    //cCodPais = (Pais)oReader["CodPais"];
+               
                     cCodCiudad = (string)oReader["CodCiudad"];
                     nNomCiudad = (string)oReader["NomCiudad"];
 
-                   Pais pPais = PresistenciaPais.BuscarPais(cCodPais);
+                  
                     cCiudad = new Ciudad( cCodCiudad, nNomCiudad,pPais);
-                    //cCiudad = new Ciudad(cCodCiudad, nNomCiudad, cCodPais);
+                    
                     oAux.Add(cCiudad);
                 }
                 oReader.Close();
